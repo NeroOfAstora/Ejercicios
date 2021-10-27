@@ -3,29 +3,72 @@ JaLora
 """
 import os
 def opc1():
-    suma=num1+num2
-    print(f"El resultado es: {suma}")
-    sigue=input("Continua: ")
+    os.system("clear")
+    #
+    print("Rellenar:\n")
+    lista=[]
+    cadena=""
+    while cadena != "xx":
+        cadena=input("Introduce (xx salir): ")
+        lista.append(cadena)
+    lista.pop(-1)
+    print(f"la lista es: {lista}")
+    #
+    input("Continuar: ")
 def opc2():
-    resta=num1-num2
-    print(f"El resultado es: {resta}")
-    sigue=input("Continua: ")
+    os.system("clear")
+    #
+    print("Insertar elemento")
+    elemento=input("Elemento: ")
+    lista=input("Lista: ")
+    lista=[]
+    lista.append(elemento)
+    print(lista)
+    #
+    input("Continuar: ")
+def opc3():
+    os.system("clear")
+    #
+    print("Crear Tupla")
+    lista=[]
+    cadena=""
+    while cadena != "0":
+        cadena=input("Introduce (xx salir): ")
+        lista.append(cadena)
+    lista.pop(-1)
+    print(tuple(lista))
+        
+    
+    #
+    input("Continuar: ")
+def opc4():
+    os.system("clear")
+    #
+    op=(1,2,3,4,5,6,7,8,10)
+    tuple(op)
+    minimo= min(op)
+    maximo= max(op)
+    long= len(op)
+    print(minimo)
+    print(maximo)
+    print(long)
+    # 
+    input("Continuar: ")
 
 while True:
     os.system("clear")
-    print("===Menu===\n1. Suma\n2. Resta\n3. Salte\n==Menu=== ")
+    print("===Menu===\n1. Rellenar lista\n2. Insertar elemento\n3. Crear tupla\n4. Operaciones con tuplas\n5. Salir\n==Menu=== ")
     opcion=int(input("Escribe una opcion: "))
-    if opcion != 3:
-        num1=int(input("Num1: "))
-        num2=int(input("Num2: "))
-        if opcion == 1:
-            opc1()
-        elif opcion == 2:
-            opc2()
-        else:
-            print("Error")
+    if opcion == 1:   
+        opc1()
+    elif opcion == 2:
+        opc2()
     elif opcion == 3:
-        print("saliendo")
+        opc3()
+    elif opcion == 4:
+        opc4()
+    elif opcion == 5:
+        print("Saliendo...")
         break
     else:
-        print("Error")
+        print("salir")
