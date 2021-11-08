@@ -33,10 +33,10 @@ def opc3():
     lista=[]
     cadena=""
     while cadena != "0":
-        cadena=input("Introduce (xx salir): ")
+        cadena=input("Introduce (0 salir): ")
         lista.append(cadena)
     lista.pop(-1)
-    print(tuple(lista))
+    print(f"La tupla: {tuple(lista)}")
         
     
     #
@@ -46,13 +46,14 @@ def opc4():
     #
     op=(1,2,3,4,5,6,7,8,10)
     tuple(op)
+    print(f"La tupla: {op}")
     minimo= min(op)
     maximo= max(op)
     long= len(op)
-    print(minimo)
-    print(maximo)
-    print(long)
-    # 
+    print(f"El minimo: {minimo}")
+    print(f"El maximo: {maximo}")
+    print(f"La longitud: {long}")
+    #
     input("Continuar: ")
 
 while True:
