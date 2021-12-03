@@ -21,7 +21,8 @@ def menu(): # Funcion del menu principal, tenemos un if recursivo que comprueba 
         input("Selecciona una opcion correcta...")
         menu()
 
-def submenu1(): # Funcion del submenu de la opcion 1. En el que tenemos un if recursivo que comprueba que opcion se va a seleccionar
+def submenu1(): # Funcion del submenu de la opcion 1
+    # En el que tenemos un if recursivo que comprueba que opcion se va a seleccionar
     print("=========Submenu==========\na. Añadir nuevos vehiculos\nb. Eliminar vehiculos\nc. Listar flota de vehiculos\nz. Salir")
     segundo=str(input("Escribe una opcion: "))
     if segundo == "a":   
@@ -45,7 +46,8 @@ def submenu1(): # Funcion del submenu de la opcion 1. En el que tenemos un if re
     else:
         print("Selecciona una opcion correcta")
         submenu1()
-def submenu2(): # Funcion del submenu de la opcion 2. En el que tenemos un if recursivo que comprueba que opcion se va a seleccionar
+def submenu2(): # Funcion del submenu de la opcion 2
+    #En el que tenemos un if recursivo que comprueba que opcion se va a seleccionar
     print("=======Submenu=========\na. Alta de rutas\nb. Baja de rutas\nc. Listar rutas\nz. Salir")
     segundo=str(input("Escribe una opcion: "))
     if segundo == "a":   
@@ -69,7 +71,8 @@ def submenu2(): # Funcion del submenu de la opcion 2. En el que tenemos un if re
     else:
         print("Selecciona una opcion correcta")
         submenu2()
-def submenu3(): # Funcion del submenu de la opcion 1. En el que tenemos un if recursivo que comprueba que opcion se va a seleccionar
+def submenu3(): # Funcion del submenu de la opcion 1
+    #En el que tenemos un if recursivo que comprueba que opcion se va a seleccionar
     print("=======Submenu=========\na. Dar de alta un viaje.\nb. Mostrar viajes asignados a un vehículo\nc. Mostrar viajes por ruta.\nz. Salir")
     segundo=str(input("Escribe una opcion: "))
     if segundo == "a":   
