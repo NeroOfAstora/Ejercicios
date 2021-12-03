@@ -1,8 +1,8 @@
 """
 JaLora
 """
-import os
-import json
+import os # Libreria para poder instertar comandos del terminal. En mi caso se usa sobre todo para limpiar la teminal (En windows es cls y en ubuntu clear) 
+import json # Libreria para leer mas sencillamente de los archivos y poder eliminar.
 # Definicion de funciones
 def menu(): # Funcion del menu principal, tenemos un if recursivo que comprueba la opcion que se va a seleccionar.
     os.system("clear")
